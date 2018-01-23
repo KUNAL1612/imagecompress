@@ -5,3 +5,6 @@ The program, written in MATLAB uses the imread function to read a hardcoded imag
 and proceeds to run K-Means on each pixel of the image and then assigns each pixel to its closest centroid. We initialize K and the number
 of iterations that we want
 
+![](SS.png)
+
+Image courtesy : www.fcbarcelona.com
