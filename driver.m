@@ -10,13 +10,16 @@ picture=double(imread('images.jpg'));
 %dividing by 255 so that all values are in the range 0-1
 picture=picture/255;
 
+% Size of the image
 pic_size=size(picture);
 
 
-
+% Reshape the image into an Nx3 matrix where N = number of pixels.
+% Each row will contain the Red, Green and Blue pixel values
+% This gives us our dataset matrix X that we will use K-Means on.
 X=reshape(picture,pic_size(1)*pic_size(2),3);
 
-%Random initialization of K and number of iterations
+%Initialization of K and number of iterations
 
 K=16;
 no_of_iterations=10;
